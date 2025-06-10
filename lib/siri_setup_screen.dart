@@ -10,7 +10,8 @@ class _SiriSetupScreenState extends State<SiriSetupScreen> {
   bool _siriAvailable = false;
   bool _siriAuthorized = false;
   bool _isLoading = false;
-  List<Map<String, dynamic>> _existingShortcuts = [];
+  // List<Map<String, dynamic>> _existingShortcuts = [];
+  List<dynamic> _existingShortcuts = [];
   String _statusMessage = "Checking Siri availability...";
 
   @override

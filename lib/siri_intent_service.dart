@@ -7,6 +7,7 @@ class SiriIntentService {
   static Future<Map<String, dynamic>> checkSiriStatus() async {
     try {
       final result = await _channel.invokeMethod('checkSiriStatus');
+      print('debug-print: checkSiriStatus() $result');
       return Map<String, dynamic>.from(result);
     } on PlatformException catch (e) {
       print("Failed to check Siri status: ${e.message}");
@@ -50,10 +51,16 @@ class SiriIntentService {
   }
 
   // Get existing voice shortcuts
-  static Future<List<Map<String, dynamic>>> getVoiceShortcuts() async {
+  // static Future<dynamic> getVoiceShortcuts() async {
+  static Future<List<dynamic>> getVoiceShortcuts() async {
     try {
       final result = await _channel.invokeMethod('getVoiceShortcuts');
-      return List<Map<String, dynamic>>.from(result);
+      print('debug-print: $result');
+      return result;
+      // as List<
+      //     Map<String,
+      //         dynamic>>; // Assuming result is a List<Map<String, dynamic>>;
+      // return List<Map<String, dynamic>>.from(result);
     } on PlatformException catch (e) {
       print("Failed to get voice shortcuts: ${e.message}");
       return [];

@@ -154,12 +154,7 @@ class _SiriSetupScreenState extends State<SiriSetupScreen> {
             const SizedBox(height: 24),
 
             // Action Buttons
-            if (!_siriAvailable) ...[
-              const ElevatedButton(
-                onPressed: null,
-                child: Text('Siri Not Available'),
-              ),
-            ] else if (!_siriAuthorized) ...[
+            if (!_siriAuthorized) ...[
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,

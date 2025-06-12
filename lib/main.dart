@@ -103,6 +103,11 @@ class HomeScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, '/notifications'),
               child: const Text('Go to Notifications'),
             ),
+            ElevatedButton(
+              onPressed: () async =>
+                  SiriIntentService.requestSiriAuthorization(),
+              child: const Text('Authorize Siri'),
+            ),
           ],
         ),
       ),

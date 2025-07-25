@@ -33,11 +33,6 @@
 	</dict>
 	<key>NSSiriUsageDescription</key>
 	<string>This app uses Siri to quickly navigate to different sections.</string>
-	<key>NSUserActivityTypes</key>
-	<array>
-		<string>open_comdata</string>
-		<string>open_notifications</string>
-	</array>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

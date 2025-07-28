@@ -47,6 +47,8 @@
 	</array>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>This app uses Speech recognition</string>
+	<key>NSMicrophoneUsageDescription</key>
+<string>We need your microphone to listen for speech</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

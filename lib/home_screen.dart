@@ -63,21 +63,21 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(height: 20),
 
                       // Enhanced Speech to Text
-                      _buildDemoButton(
-                        context: context,
-                        title: 'Enhanced Speech to Text',
-                        description: 'With glowing animation and better UX',
-                        icon: Icons.record_voice_over,
-                        color: Colors.orange,
-                        onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const EnhancedSpeechScreen(),
-                          ),
-                        ),
-                      ),
+                      // _buildDemoButton(
+                      //   context: context,
+                      //   title: 'Enhanced Speech to Text',
+                      //   description: 'With glowing animation and better UX',
+                      //   icon: Icons.record_voice_over,
+                      //   color: Colors.orange,
+                      //   onTap: () => Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => const EnhancedSpeechScreen(),
+                      //     ),
+                      //   ),
+                      // ),
 
-                      const SizedBox(height: 20),
+                      // const SizedBox(height: 20),
 
                       // Streaming Speech to Text
                       _buildDemoButton(
